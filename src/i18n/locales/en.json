@@ -1,5 +1,29 @@
 {
   "Home": {
     "title": "Swagger/OpenAPI UI — coming soon"
+  },
+  "Header": {
+    "brand": "Swagger/OpenAPI UI",
+    "about": "About",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "history": "History",
+    "signOut": "Sign Out"
+  },
+  "Footer": {
+    "about": "About",
+    "rights": "All rights reserved."
+  },
+  "SignIn": {
+    "title": "Sign In"
+  },
+  "SignUp": {
+    "title": "Sign Up"
+  },
+  "About": {
+    "title": "About"
+  },
+  "History": {
+    "title": "History & Analytics"
   }
 }
