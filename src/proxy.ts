@@ -1,7 +1,7 @@
 import createMiddleware from 'next-intl/middleware';
 import { NextResponse, type NextRequest } from 'next/server';
 import { routing } from './i18n/routing';
-import { isProtectedPath } from './lib/auth/protected-paths';
+import { isGuestOnlyPath, isProtectedPath } from './lib/auth/protected-paths';
 import { SESSION_COOKIE_NAME, verifySessionCookie } from './lib/auth/session';
 
 const handleIntl = createMiddleware(routing);
@@ -22,11 +22,14 @@ function splitLocale(pathname: string): { locale: string; rest: string } {
 export async function proxy(request: NextRequest) {
   const { locale, rest } = splitLocale(request.nextUrl.pathname);
 
-  if (isProtectedPath(rest)) {
+  if (isProtectedPath(rest) || isGuestOnlyPath(rest)) {
     const sessionCookie = request.cookies.get(SESSION_COOKIE_NAME)?.value;
     const session = await verifySessionCookie(sessionCookie);
 
-    if (!session) {
+    const shouldRedirectToHome =
+      (isProtectedPath(rest) && !session) || (isGuestOnlyPath(rest) && session);
+
+    if (shouldRedirectToHome) {
       const redirectUrl = request.nextUrl.clone();
       redirectUrl.pathname = `/${locale}`;
       redirectUrl.search = '';

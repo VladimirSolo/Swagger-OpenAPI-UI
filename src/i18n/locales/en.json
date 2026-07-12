@@ -15,10 +15,32 @@
     "rights": "All rights reserved."
   },
   "SignIn": {
-    "title": "Sign In"
+    "title": "Sign In",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign In",
+    "noAccount": "Don't have an account?",
+    "signUpLink": "Sign Up"
   },
   "SignUp": {
-    "title": "Sign Up"
+    "title": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign Up",
+    "haveAccount": "Already have an account?",
+    "signInLink": "Sign In"
+  },
+  "Errors": {
+    "email": "Enter a valid email address",
+    "passwordLength": "Password must be at least 8 characters long",
+    "passwordLetter": "Password must contain at least one letter",
+    "passwordDigit": "Password must contain at least one digit",
+    "passwordSpecial": "Password must contain at least one special character",
+    "invalidCredentials": "Invalid email or password",
+    "emailInUse": "An account with this email already exists",
+    "tooManyRequests": "Too many attempts. Please try again later",
+    "network": "Network error. Check your connection and try again",
+    "generic": "Something went wrong. Please try again"
   },
   "About": {
     "title": "About"
