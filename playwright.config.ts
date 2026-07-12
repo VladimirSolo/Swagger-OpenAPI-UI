@@ -1,4 +1,11 @@
+import { existsSync } from 'fs';
+import path from 'path';
 import { defineConfig, devices } from '@playwright/test';
+
+const envLocalPath = path.resolve(__dirname, '.env.local');
+if (existsSync(envLocalPath)) {
+  process.loadEnvFile(envLocalPath);
+}
 
 export default defineConfig({
   testDir: './e2e',
