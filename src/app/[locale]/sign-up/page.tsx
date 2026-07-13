@@ -54,7 +54,7 @@ export default function SignUpPage() {
   }
 
   return (
-    <Flex vertical justify="center" flex={1} className="mx-auto w-full max-w-md px-6 py-16">
+    <Flex vertical justify="center" flex={1} className="mx-auto! w-full max-w-md px-6 py-16">
       {contextHolder}
       <Typography.Title level={1} className="text-2xl!">
         {t('title')}

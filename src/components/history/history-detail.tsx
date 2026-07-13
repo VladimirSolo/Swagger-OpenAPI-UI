@@ -20,7 +20,7 @@ export function HistoryDetail({ entry }: { entry: SerializedHistoryDetail }) {
   const t = useTranslations('History');
 
   return (
-    <Flex vertical gap={16} className="mx-auto w-full max-w-3xl px-6 py-16">
+    <Flex vertical gap={16} className="mx-auto! w-full max-w-3xl px-6 py-16">
       <Link href="/history">
         <Typography.Text className="text-blue-600! dark:text-blue-400!">
           {t('backLink')}

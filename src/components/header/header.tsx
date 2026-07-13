@@ -42,7 +42,7 @@ export function Header() {
         align="center"
         justify="space-between"
         flex={1}
-        className="mx-auto h-full max-w-6xl px-6"
+        className="mx-auto! h-full max-w-6xl px-6"
       >
         <Flex align="center" gap={24}>
           <Link href="/">

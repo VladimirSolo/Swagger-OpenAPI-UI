@@ -17,7 +17,7 @@ export function HistoryView({ entries }: { entries: SerializedHistoryEntry[] }) 
 
   if (entries.length === 0) {
     return (
-      <Flex vertical gap={16} className="mx-auto w-full max-w-3xl px-6 py-16">
+      <Flex vertical gap={16} className="mx-auto! w-full max-w-3xl px-6 py-16">
         <Typography.Title level={1} className="text-2xl!">
           {t('title')}
         </Typography.Title>
@@ -32,7 +32,7 @@ export function HistoryView({ entries }: { entries: SerializedHistoryEntry[] }) 
   }
 
   return (
-    <Flex vertical gap={16} className="mx-auto w-full max-w-4xl px-6 py-16">
+    <Flex vertical gap={16} className="mx-auto! w-full max-w-4xl px-6 py-16">
       <Typography.Title level={1} className="text-2xl!">
         {t('title')}
       </Typography.Title>

@@ -43,7 +43,17 @@
     "generic": "Something went wrong. Please try again"
   },
   "About": {
-    "title": "About"
+    "title": "About",
+    "courseHeading": "RS School Course",
+    "courseText": "This project was built as part of the RS School React course (2026 Q2) — a free, community-driven course teaching modern front-end development through hands-on, real-world projects.",
+    "projectHeading": "About the Project",
+    "projectText": "Swagger/OpenAPI UI is an editor and interactive REST client for OpenAPI/Swagger specifications. It lets you paste or write a schema, validate it, browse its endpoints, execute real requests against any public API, and review your request history with detailed analytics.",
+    "technologiesHeading": "Technologies Used",
+    "teamHeading": "Team",
+    "memberRole": "Full-stack developer (solo)",
+    "resourcesHeading": "Resources",
+    "resourceCourse": "RS School",
+    "resourceRepo": "GitHub Repository"
   },
   "History": {
     "title": "History & Analytics",
