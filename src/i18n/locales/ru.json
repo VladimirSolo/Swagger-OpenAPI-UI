@@ -46,7 +46,20 @@
     "title": "О проекте"
   },
   "History": {
-    "title": "История и аналитика"
+    "title": "История и аналитика",
+    "empty": "Вы ещё не выполнили ни одного запроса",
+    "emptyLink": "Перейти к редактору и просмотрщику",
+    "noResponse": "Нет ответа",
+    "backLink": "← Назад к истории",
+    "detailTitle": "Детали запроса",
+    "fieldMethod": "Метод",
+    "fieldUrl": "Эндпоинт / URL",
+    "fieldStatus": "Код статуса",
+    "fieldDuration": "Длительность",
+    "fieldTimestamp": "Время",
+    "fieldRequestSize": "Размер запроса",
+    "fieldResponseSize": "Размер ответа",
+    "fieldError": "Детали ошибки"
   },
   "Editor": {
     "ariaLabel": "Редактор схемы OpenAPI/Swagger",
