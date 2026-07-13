@@ -33,7 +33,7 @@ test.describe('Swagger Editor', () => {
   // strain that concurrent network loading and flake with a load timeout.
   test.describe.configure({ mode: 'serial' });
 
-  test('validates a pasted schema and lists its endpoints', async ({ page }) => {
+  test('validates a pasted schema and the Viewer lists its endpoints', async ({ page }) => {
     const errors: string[] = [];
     page.on('pageerror', (err) => errors.push(String(err)));
 
@@ -41,10 +41,11 @@ test.describe('Swagger Editor', () => {
     await pasteIntoEditor(page, validSpecJson);
 
     await expect(page.getByText('Schema is valid')).toBeVisible({ timeout: 5000 });
-    const endpointsPanel = page.getByText('Endpoints').locator('..');
-    await expect(endpointsPanel.getByText('/pets', { exact: true })).toHaveCount(2);
-    await expect(endpointsPanel.getByText('GET')).toBeVisible();
-    await expect(endpointsPanel.getByText('POST')).toBeVisible();
+    const viewer = page.locator('.swagger-viewer');
+    await expect(viewer.getByRole('button', { name: /GET\s*\/pets/ })).toBeVisible({
+      timeout: 10000,
+    });
+    await expect(viewer.getByRole('button', { name: /POST\s*\/pets/ })).toBeVisible();
 
     expect(errors, `page errors: ${errors.join('\n')}`).toEqual([]);
   });
@@ -73,8 +74,11 @@ test.describe('Swagger Editor', () => {
     await expect(page.getByRole('button', { name: 'Switch to YAML' })).toBeVisible();
     await expect(page.getByText('Schema is valid')).toBeVisible({ timeout: 5000 });
 
-    const endpointsPanel = page.getByText('Endpoints').locator('..');
-    await expect(endpointsPanel.getByText('/pets', { exact: true })).toHaveCount(2);
+    const viewer = page.locator('.swagger-viewer');
+    await expect(viewer.getByRole('button', { name: /GET\s*\/pets/ })).toBeVisible({
+      timeout: 10000,
+    });
+    await expect(viewer.getByRole('button', { name: /POST\s*\/pets/ })).toBeVisible();
   });
 
   test('split view orientation adapts to viewport aspect ratio', async ({ page }) => {
