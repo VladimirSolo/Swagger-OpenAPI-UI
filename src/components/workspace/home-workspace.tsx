@@ -6,7 +6,7 @@ import { SchemaEditor } from '@/components/editor/schema-editor';
 import { FormatToggle } from '@/components/editor/format-toggle';
 import { SaveSchemaButton } from '@/components/editor/save-schema-button';
 import { ValidationStatus } from '@/components/editor/validation-status';
-import { EndpointList } from '@/components/viewer/endpoint-list';
+import { SwaggerViewer } from '@/components/viewer/swagger-viewer';
 import { SplitLayout } from '@/components/workspace/split-layout';
 
 export function HomeWorkspace({ initialText }: { initialText: string }) {
@@ -23,7 +23,7 @@ export function HomeWorkspace({ initialText }: { initialText: string }) {
             <SchemaEditor />
           </Flex>
         }
-        viewer={<EndpointList />}
+        viewer={<SwaggerViewer />}
       />
     </SchemaProvider>
   );
