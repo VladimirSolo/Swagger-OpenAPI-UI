@@ -46,7 +46,20 @@
     "title": "About"
   },
   "History": {
-    "title": "History & Analytics"
+    "title": "History & Analytics",
+    "empty": "You haven't executed any requests yet",
+    "emptyLink": "Go to the Editor & Viewer",
+    "noResponse": "No response",
+    "backLink": "← Back to History",
+    "detailTitle": "Request details",
+    "fieldMethod": "Method",
+    "fieldUrl": "Endpoint / URL",
+    "fieldStatus": "Status code",
+    "fieldDuration": "Duration",
+    "fieldTimestamp": "Timestamp",
+    "fieldRequestSize": "Request size",
+    "fieldResponseSize": "Response size",
+    "fieldError": "Error details"
   },
   "Editor": {
     "ariaLabel": "OpenAPI/Swagger schema editor",
