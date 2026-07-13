@@ -47,5 +47,21 @@
   },
   "History": {
     "title": "History & Analytics"
+  },
+  "Editor": {
+    "ariaLabel": "OpenAPI/Swagger schema editor",
+    "placeholder": "Paste or type an OpenAPI/Swagger schema (JSON or YAML) to get started",
+    "switchToJson": "Switch to JSON",
+    "switchToYaml": "Switch to YAML",
+    "validating": "Validating…",
+    "valid": "Schema is valid",
+    "save": "Save",
+    "saveSuccess": "Schema saved",
+    "saveError": "Failed to save schema",
+    "signInToSave": "Sign in to save your schema"
+  },
+  "Viewer": {
+    "title": "Endpoints",
+    "empty": "Paste a valid OpenAPI/Swagger schema to see its endpoints here"
   }
 }

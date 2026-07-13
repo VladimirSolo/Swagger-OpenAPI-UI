@@ -1,22 +1,12 @@
-'use client';
+import { cookies } from 'next/headers';
+import { HomeWorkspace } from '@/components/workspace/home-workspace';
+import { SESSION_COOKIE_NAME, verifySessionCookie } from '@/lib/auth/session';
+import { getSavedSchema } from '@/lib/schema/storage';
 
-import { useTranslations } from 'next-intl';
-import { Flex, Typography } from 'antd';
+export default async function Home() {
+  const cookieStore = await cookies();
+  const session = await verifySessionCookie(cookieStore.get(SESSION_COOKIE_NAME)?.value);
+  const saved = session ? await getSavedSchema(session.uid) : null;
 
-export default function Home() {
-  const t = useTranslations('Home');
-
-  return (
-    <Flex
-      vertical
-      align="center"
-      justify="center"
-      flex={1}
-      className="bg-zinc-50 px-16 py-32 dark:bg-black"
-    >
-      <Typography.Title level={1} className="max-w-md! text-center!">
-        {t('title')}
-      </Typography.Title>
-    </Flex>
-  );
+  return <HomeWorkspace initialText={saved?.content ?? ''} />;
 }
