@@ -1,5 +1,96 @@
 {
   "Home": {
     "title": "Swagger/OpenAPI UI — скоро здесь"
+  },
+  "Header": {
+    "brand": "Swagger/OpenAPI UI",
+    "about": "О проекте",
+    "signIn": "Войти",
+    "signUp": "Регистрация",
+    "history": "История",
+    "signOut": "Выйти"
+  },
+  "Footer": {
+    "about": "О проекте",
+    "rights": "Все права защищены."
+  },
+  "SignIn": {
+    "title": "Вход",
+    "email": "Email",
+    "password": "Пароль",
+    "submit": "Войти",
+    "noAccount": "Нет аккаунта?",
+    "signUpLink": "Зарегистрироваться"
+  },
+  "SignUp": {
+    "title": "Регистрация",
+    "email": "Email",
+    "password": "Пароль",
+    "submit": "Зарегистрироваться",
+    "haveAccount": "Уже есть аккаунт?",
+    "signInLink": "Войти"
+  },
+  "Errors": {
+    "email": "Введите корректный email",
+    "passwordLength": "Пароль должен быть не короче 8 символов",
+    "passwordLetter": "Пароль должен содержать хотя бы одну букву",
+    "passwordDigit": "Пароль должен содержать хотя бы одну цифру",
+    "passwordSpecial": "Пароль должен содержать хотя бы один специальный символ",
+    "invalidCredentials": "Неверный email или пароль",
+    "emailInUse": "Аккаунт с таким email уже существует",
+    "tooManyRequests": "Слишком много попыток. Попробуйте позже",
+    "network": "Ошибка сети. Проверьте подключение и попробуйте снова",
+    "generic": "Что-то пошло не так. Попробуйте снова"
+  },
+  "About": {
+    "title": "О проекте",
+    "courseHeading": "Курс RS School",
+    "courseText": "Этот проект создан в рамках курса RS School «React» (2026 Q2) — бесплатного курса по современной фронтенд-разработке, построенного на практических проектах.",
+    "projectHeading": "Описание проекта",
+    "projectText": "Swagger/OpenAPI UI — редактор и интерактивный REST-клиент для спецификаций OpenAPI/Swagger. Позволяет вставить или написать схему, провалидировать её, посмотреть список эндпоинтов, выполнить реальные запросы к любому публичному API и просмотреть историю запросов с подробной аналитикой.",
+    "technologiesHeading": "Используемые технологии",
+    "teamHeading": "Команда",
+    "memberRole": "Full-stack разработчик (соло)",
+    "resourcesHeading": "Полезные ссылки",
+    "resourceCourse": "RS School",
+    "resourceRepo": "Репозиторий на GitHub"
+  },
+  "History": {
+    "title": "История и аналитика",
+    "empty": "Вы ещё не выполнили ни одного запроса",
+    "emptyLink": "Перейти к редактору и просмотрщику",
+    "noResponse": "Нет ответа",
+    "backLink": "← Назад к истории",
+    "detailTitle": "Детали запроса",
+    "fieldMethod": "Метод",
+    "fieldUrl": "Эндпоинт / URL",
+    "fieldStatus": "Код статуса",
+    "fieldDuration": "Длительность",
+    "fieldTimestamp": "Время",
+    "fieldRequestSize": "Размер запроса",
+    "fieldResponseSize": "Размер ответа",
+    "fieldError": "Детали ошибки"
+  },
+  "Editor": {
+    "ariaLabel": "Редактор схемы OpenAPI/Swagger",
+    "placeholder": "Вставьте или напишите схему OpenAPI/Swagger (JSON или YAML), чтобы начать",
+    "switchToJson": "Переключить на JSON",
+    "switchToYaml": "Переключить на YAML",
+    "validating": "Проверка…",
+    "valid": "Схема валидна",
+    "save": "Сохранить",
+    "saveSuccess": "Схема сохранена",
+    "saveError": "Не удалось сохранить схему",
+    "signInToSave": "Войдите, чтобы сохранить схему"
+  },
+  "Viewer": {
+    "title": "Эндпоинты",
+    "empty": "Вставьте валидную схему OpenAPI/Swagger, чтобы увидеть эндпоинты здесь"
+  },
+  "ErrorPage": {
+    "title": "Что-то пошло не так",
+    "description": "Произошла непредвиденная ошибка. Вы можете попробовать снова или вернуться на главную страницу.",
+    "retry": "Попробовать снова",
+    "home": "На главную"
   }
 }

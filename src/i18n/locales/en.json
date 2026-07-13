@@ -1,5 +1,96 @@
 {
   "Home": {
     "title": "Swagger/OpenAPI UI — coming soon"
+  },
+  "Header": {
+    "brand": "Swagger/OpenAPI UI",
+    "about": "About",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "history": "History",
+    "signOut": "Sign Out"
+  },
+  "Footer": {
+    "about": "About",
+    "rights": "All rights reserved."
+  },
+  "SignIn": {
+    "title": "Sign In",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign In",
+    "noAccount": "Don't have an account?",
+    "signUpLink": "Sign Up"
+  },
+  "SignUp": {
+    "title": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign Up",
+    "haveAccount": "Already have an account?",
+    "signInLink": "Sign In"
+  },
+  "Errors": {
+    "email": "Enter a valid email address",
+    "passwordLength": "Password must be at least 8 characters long",
+    "passwordLetter": "Password must contain at least one letter",
+    "passwordDigit": "Password must contain at least one digit",
+    "passwordSpecial": "Password must contain at least one special character",
+    "invalidCredentials": "Invalid email or password",
+    "emailInUse": "An account with this email already exists",
+    "tooManyRequests": "Too many attempts. Please try again later",
+    "network": "Network error. Check your connection and try again",
+    "generic": "Something went wrong. Please try again"
+  },
+  "About": {
+    "title": "About",
+    "courseHeading": "RS School Course",
+    "courseText": "This project was built as part of the RS School React course (2026 Q2) — a free, community-driven course teaching modern front-end development through hands-on, real-world projects.",
+    "projectHeading": "About the Project",
+    "projectText": "Swagger/OpenAPI UI is an editor and interactive REST client for OpenAPI/Swagger specifications. It lets you paste or write a schema, validate it, browse its endpoints, execute real requests against any public API, and review your request history with detailed analytics.",
+    "technologiesHeading": "Technologies Used",
+    "teamHeading": "Team",
+    "memberRole": "Full-stack developer (solo)",
+    "resourcesHeading": "Resources",
+    "resourceCourse": "RS School",
+    "resourceRepo": "GitHub Repository"
+  },
+  "History": {
+    "title": "History & Analytics",
+    "empty": "You haven't executed any requests yet",
+    "emptyLink": "Go to the Editor & Viewer",
+    "noResponse": "No response",
+    "backLink": "← Back to History",
+    "detailTitle": "Request details",
+    "fieldMethod": "Method",
+    "fieldUrl": "Endpoint / URL",
+    "fieldStatus": "Status code",
+    "fieldDuration": "Duration",
+    "fieldTimestamp": "Timestamp",
+    "fieldRequestSize": "Request size",
+    "fieldResponseSize": "Response size",
+    "fieldError": "Error details"
+  },
+  "Editor": {
+    "ariaLabel": "OpenAPI/Swagger schema editor",
+    "placeholder": "Paste or type an OpenAPI/Swagger schema (JSON or YAML) to get started",
+    "switchToJson": "Switch to JSON",
+    "switchToYaml": "Switch to YAML",
+    "validating": "Validating…",
+    "valid": "Schema is valid",
+    "save": "Save",
+    "saveSuccess": "Schema saved",
+    "saveError": "Failed to save schema",
+    "signInToSave": "Sign in to save your schema"
+  },
+  "Viewer": {
+    "title": "Endpoints",
+    "empty": "Paste a valid OpenAPI/Swagger schema to see its endpoints here"
+  },
+  "ErrorPage": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. You can try again, or go back to the home page.",
+    "retry": "Try again",
+    "home": "Go to home page"
   }
 }
