@@ -8,6 +8,7 @@ import { routing } from '@/i18n/routing';
 import { AuthProvider } from '@/contexts/auth-context';
 import { Header } from '@/components/header/header';
 import { Footer } from '@/components/footer/footer';
+import { ThemeProvider } from '@/components/theme/theme-provider';
 import '../globals.css';
 
 const geistSans = Geist({
@@ -49,13 +50,15 @@ export default async function LocaleLayout({
     >
       <body className="flex min-h-full flex-col">
         <AntdRegistry>
-          <NextIntlClientProvider>
-            <AuthProvider>
-              <Header />
-              <main className="flex flex-1 flex-col">{children}</main>
-              <Footer />
-            </AuthProvider>
-          </NextIntlClientProvider>
+          <ThemeProvider>
+            <NextIntlClientProvider>
+              <AuthProvider>
+                <Header />
+                <main className="flex flex-1 flex-col">{children}</main>
+                <Footer />
+              </AuthProvider>
+            </NextIntlClientProvider>
+          </ThemeProvider>
         </AntdRegistry>
       </body>
     </html>

@@ -47,5 +47,21 @@
   },
   "History": {
     "title": "История и аналитика"
+  },
+  "Editor": {
+    "ariaLabel": "Редактор схемы OpenAPI/Swagger",
+    "placeholder": "Вставьте или напишите схему OpenAPI/Swagger (JSON или YAML), чтобы начать",
+    "switchToJson": "Переключить на JSON",
+    "switchToYaml": "Переключить на YAML",
+    "validating": "Проверка…",
+    "valid": "Схема валидна",
+    "save": "Сохранить",
+    "saveSuccess": "Схема сохранена",
+    "saveError": "Не удалось сохранить схему",
+    "signInToSave": "Войдите, чтобы сохранить схему"
+  },
+  "Viewer": {
+    "title": "Эндпоинты",
+    "empty": "Вставьте валидную схему OpenAPI/Swagger, чтобы увидеть эндпоинты здесь"
   }
 }
