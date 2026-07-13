@@ -86,5 +86,11 @@
   "Viewer": {
     "title": "Endpoints",
     "empty": "Paste a valid OpenAPI/Swagger schema to see its endpoints here"
+  },
+  "ErrorPage": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. You can try again, or go back to the home page.",
+    "retry": "Try again",
+    "home": "Go to home page"
   }
 }
